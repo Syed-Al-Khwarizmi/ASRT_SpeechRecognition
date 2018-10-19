@@ -43,7 +43,7 @@ else:
 
 ms = ModelSpeech(datapath)
 
-ms.LoadModel(modelpath + 'speech_model251_e_0_step_27000.model')
+ms.LoadModel(modelpath+ '/m251/' + 'speech_model251_e_0_step_27000.model')
 print("Model loaded")
 ms.TrainModel(datapath, epoch = 50, batch_size = 16, save_step = 500)
 
